@@ -1,0 +1,8 @@
+- name: Variables
+  hosts:  local
+  connection: local
+
+  tasks:
+  - name: Print the Variables
+    ansible.builtin.debug:
+      msg: "project is {{ PROJECT }} environment is {{ ENVIRONMENT }}"
