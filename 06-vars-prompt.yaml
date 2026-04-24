@@ -2,12 +2,12 @@
   hosts:  local
   connection: local
   vars_prompt:
-  - name: project
-    prompt: What is your project?
+  - name: PROJECT
+    prompt: What is your PROJECT?
     private: false
 
-  - name: environment
-    prompt: What is your environment?
+  - name: ENVIRONMENT
+    prompt: What is your ENVIRONMENT?
     private: false
 
 
