@@ -1,0 +1,13 @@
+- name: Variables
+  hosts:  local
+  connection: local
+  vars:
+    PROJECT: "QBE"
+    ENVIRONMENT: "PROD"
+
+  tasks:
+  - name: Print the Variables
+    vars:
+      PROJECT: "QBE Inc"
+    ansible.builtin.debug:
+      msg: "project is {{ PROJECT }} environment is {{ ENVIRONMENT }}"
