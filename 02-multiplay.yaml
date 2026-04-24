@@ -1,6 +1,6 @@
 - name: PLAY1
-  hosts:  local
-  connection: local
+  hosts:  localhost
+  connection: localhost
   tasks:
   - name: PLAY1 and TASK1
     ansible.builtin.debug:
