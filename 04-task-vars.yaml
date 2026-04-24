@@ -12,3 +12,8 @@
       COURSE: "DevSecOps with AWS"
     ansible.builtin.debug:
       msg: "course is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}"
+
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}"
