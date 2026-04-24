@@ -11,3 +11,7 @@
       PROJECT: "QBE Inc"
     ansible.builtin.debug:
       msg: "project is {{ PROJECT }} environment is {{ ENVIRONMENT }}"
+
+  - name: Print the Variables
+    ansible.builtin.debug:
+      msg: "project is {{ PROJECT }} environment is {{ ENVIRONMENT }}"
