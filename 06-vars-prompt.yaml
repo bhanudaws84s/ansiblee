@@ -4,12 +4,15 @@
   vars_prompt:
   - name: PROJECT
     prompt: Please enter the PROJECT
+    private: false
 
   - name: ENVIRONMENT
     prompt: Please enter the ENVIRONMENT
-    
+    private: false
+
   - name: COMPONENT
     prompt: Please enter the COMPONENT
+    private: false
 
   tasks:
   - name: print variables
