@@ -2,4 +2,5 @@
   hosts: web
   tasks:
   - name: shell module and command module
-    ansible.builtin.command: ls -la
+    ansible.builtin.command: /tmp >> test.txt
+    
