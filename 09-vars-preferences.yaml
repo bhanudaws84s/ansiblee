@@ -4,8 +4,8 @@
   vars:
     GREET: "PLAY"
   
-  vars_files:
-  - project.yaml
+  # vars_files:
+  # - project.yaml
 
   vars_prompt:
   - name: GREET
