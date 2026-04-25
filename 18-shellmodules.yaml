@@ -5,4 +5,4 @@
   #   ansible.builtin.command: /tmp >> test.txt
 
   - name: shell module and command module
-    ansible.builtin.command: /home/ec2-user >> test.txt
+    ansible.builtin.command: ls -l >> /tmp
