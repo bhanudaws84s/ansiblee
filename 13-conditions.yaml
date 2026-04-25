@@ -6,7 +6,7 @@
     ansible.builtin.dnf:
       name: nginx
       state: installed
-    when: ansible_os_family= | string "RedHat"
+    when: ansible_os_family| string = "RedHat"
 
   - name: install the package
     ansible.builtin.apt:
