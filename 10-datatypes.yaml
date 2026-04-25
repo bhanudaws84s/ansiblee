@@ -1,0 +1,23 @@
+- name: datatypes
+  hosts: web
+  become: yes
+  vars:
+    COURSE: "DevOps with AWS" # string
+    HOURS: 120 # int
+    LIVE: true # boolean
+    DETAILS: #list
+    - AWS
+    - ansible
+    - linux
+    - docker
+    TOOLS: { #map
+      "ci : jenkins"
+      "cloud : AWS"
+      "os : linux"
+    }
+
+  tasks:
+  - name: Print the variables
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }} hours is {{ HOURS }} is it live?{{ LIVE }} details are {{ DETAILS }} tools 
+      {{ TOOLS }}"
