@@ -1,6 +1,8 @@
 - name: shell modules
   hosts: web
   tasks:
+  # - name: shell module and command module
+  #   ansible.builtin.command: /tmp >> test.txt
+
   - name: shell module and command module
     ansible.builtin.command: /tmp >> test.txt
-    
