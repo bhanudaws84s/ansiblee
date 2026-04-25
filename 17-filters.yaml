@@ -1,0 +1,7 @@
+- name: filters
+  hosts: web
+  become: yes
+  tasks:
+  - name: Print filters
+    ansible.builtin.debug:
+      msg: "{{ some_variable | default(5) }}"
