@@ -10,7 +10,7 @@
       msg: "{{ some_variable | default(5) }}"
 
   - name: Print fruits
-    ansible.builtin.debug:
     vars:
       fruits: apple,banana,orange
+    ansible.builtin.debug:
       msg: "{{ fruits | split(',') }}"
