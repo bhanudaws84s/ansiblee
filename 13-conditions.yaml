@@ -6,10 +6,10 @@
     ansible.builtin.dnf:
       name: nginx
       state: installed
-    when: ansible_os_family| string = "RedHat"
+    when: ansible_os_family=="RedHat"
 
   - name: install the package
     ansible.builtin.apt:
       name: ubuntu
       state: present
-    when: ansible_os_family="Debain"
+    when: ansible_os_family=="Debain"
