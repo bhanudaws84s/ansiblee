@@ -9,7 +9,7 @@
     when: ansible_os_family=="RedHat"
 
   - name: install the package
-    ansible.builtin.apt:
+    ansible.builtin.package:
       name: ubuntu
       state: present
     when: ansible_os_family=="Debain"
