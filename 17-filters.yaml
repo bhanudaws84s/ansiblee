@@ -1,6 +1,10 @@
 - name: filters
   hosts: web
   become: yes
+  vars_prompt:
+  - name: some_variable
+    prompt: Enter the some_variable?
+    private: false
   tasks:
   - name: Print filters
     ansible.builtin.debug:
