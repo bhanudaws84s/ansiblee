@@ -3,7 +3,7 @@
   connection: local
   vars_prompt:
   - name: my_number
-    prompt: "What is your my_number?"
+    prompt: What is your my_number?
     private: false
 
   tasks:
