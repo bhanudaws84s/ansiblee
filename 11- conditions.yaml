@@ -1,7 +1,7 @@
 - name: conditions
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
   - name: my_number
     prompt: "What is your number?"
     private: false
