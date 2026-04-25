@@ -10,9 +10,9 @@
   - name: print less than 100
     ansible.builtin.debug:
       msg : "Given number is less than {{ my_number }}"
-    when: my_number <= 100
+    when: my_number |int <= 100
 
   - name: print greater than 100
     ansible.builtin.debug:
       msg : "Given number is greater than {{ my_number }}"
-    when: my_number > 100
+    when: my_number | int > 100
