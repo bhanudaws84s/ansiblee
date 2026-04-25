@@ -1,8 +1,10 @@
 - name: conditions
   hosts: local
   connection: local
-  vars:
-    my_number: 10
+  vars_promt:
+  - name: my_number
+    prompt: "What is your number?"
+    private: false
 
   tasks:
   - name: print the conditions
