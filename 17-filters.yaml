@@ -3,8 +3,14 @@
   become: yes
   vars_files:
   - project.yaml
-  
+
   tasks:
   - name: Print filters
     ansible.builtin.debug:
       msg: "{{ some_variable | default(5) }}"
+
+  - name: Print fruits
+    ansible.builtin.debug:
+    vars:
+      fruits: apple,banana,orange
+      msg: "{{ fruits | split(',') }}"
