@@ -15,4 +15,4 @@
   - name: print the conditions
     ansible.builtin.debug:
       msg : "Given number is greater than {{ my_number }}"
-    when: my_number > 15
+    when: my_number > 40
