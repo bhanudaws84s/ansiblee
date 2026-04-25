@@ -4,9 +4,9 @@
   - name:  command
     ansible.builtin.command: ls -l
 
-  - name: command module
-    ansible.builtin.command: ls -l >> /tmp
-    register: command_result
+  # - name: command module
+  #   ansible.builtin.command: ls -l >> /tmp
+  #   register: command_result
 
   - name: shell module
     ansible.builtin.shell: ls -l >> /tmp/output.txt
