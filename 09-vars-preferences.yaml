@@ -7,10 +7,10 @@
   vars_files:
   - project.yaml
 
-  vars_prompt:
-  - name: GREET
-    prompt: "What is your GREET?"
-    private: false
+  # vars_prompt:
+  # - name: GREET
+  #   prompt: "What is your GREET?"
+  #   private: false
 
   tasks:
   - name: task GREET
