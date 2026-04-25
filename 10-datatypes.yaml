@@ -5,16 +5,16 @@
     COURSE: "DevOps with AWS" # string
     HOURS: 120 # int
     LIVE: true # boolean
-    DETAILS: #list
+    DETAILS: #list [ ]
     - AWS
     - ansible
     - linux
     - docker
-    TOOLS: { #map
-      "ci : jenkins"
-      "cloud : AWS"
-      "os : linux"
-    }
+    TOOLS:  #map { }
+      ci : jenkins
+      cloud : AWS
+      os : linux
+    
 
   tasks:
   - name: Print the variables
